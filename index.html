@@ -11,7 +11,8 @@
 
   <header role="banner">
     <nav role="navigation">
-      <ul>
+      <div id="hamburger" class="hamburger">&#9776;</div>
+      <ul id="nav-menu">
         <li><a href="#about-me">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -29,7 +30,7 @@
     <section id="projects">
       <h2>Projects</h2>
 
-      <article>
+      <article class="project" data-category="web">
         <h3>Project One</h3>
         <figure>
           <img src="project1.png" alt="Screenshot of Project One" />
@@ -38,7 +39,7 @@
         <p>This project is a responsive landing page built using HTML5 and CSS3.</p>
       </article>
 
-      <article>
+      <article class="project" data-category="portfolio">
         <h3>Project Two</h3>
         <figure>
           <img src="project2.png" alt="Screenshot of Project Two" />
@@ -63,7 +64,7 @@
 
     <section id="contact">
       <h2>Contact Me</h2>
-      <form>
+      <form id="contact-form">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required />
 
@@ -82,5 +83,14 @@
     <p>&copy; 2025 My Developer Portfolio</p>
   </footer>
 
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img id="lightbox-img" src="" alt="Project preview" />
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
+
